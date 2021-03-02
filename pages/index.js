@@ -35,6 +35,9 @@ export default function Home() {
           <Link href='/projects/moodlist'>
             <button className={utilStyles.appBtn}>MoodList</button>
           </Link>
+          <Link href='/projects/fakeAir-bnb'>
+            <button className={utilStyles.appBtn}>FakeAir-bnb</button>
+          </Link>
         </div>
       </section>
     </Layout>

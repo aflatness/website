@@ -20,11 +20,15 @@
   margin: 1rem 0;
 }
 
-.headingMd {
+.headingMd, .headingSm {
   text-align: center;
   padding: 1em 3em;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.headingSm {
+  padding: .5em 6em;
 }
 
 .borderCircle {
