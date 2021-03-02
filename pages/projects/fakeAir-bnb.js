@@ -19,9 +19,13 @@ export default function FirstPost() {
       <div className={utilStyles.headingSm}>A full-stack application project, mocking an Airbnb listing page for 20 different home.</div>
       <div className={utilStyles.headingSm}> Utilizing Google Maps JS API and React-Bootstrap for a dynamic, responsive front-end, with Express, Node.JS, and Mongoose hosting the server and data handling.</div>
       <div className={utilStyles.gif}>
-        <Image>
-
-        </Image>
+        <Image
+          priority
+          src='' //TODO: Add heroku gif
+          height={339}
+          width={600}
+          alt='FakeAir-bnb'
+        />
       </div>
     </Layout>
     )
