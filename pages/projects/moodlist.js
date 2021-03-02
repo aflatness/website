@@ -16,7 +16,6 @@ export default function FirstPost() {
               MoodList
             </a>
           </h1>
-
         <div className={utilStyles.headingMd}>MoodList creates a curated Spotify playlist based a users current mood and top 50 listened to tracks </div>
         <div className={utilStyles.gif}>
           <Image
