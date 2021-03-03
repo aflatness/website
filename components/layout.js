@@ -10,6 +10,8 @@ const Layout = ({ children, home }) => (
   <div className={styles.container}>
     <Head>
       <link rel='icon' href='/favicon.ico' />
+      <link rel='preconnect' href='https://fonts.gstatic.com' />
+      <link href='https://fonts.googleapis.com/css2?family=Varela+Round&display=swap' rel='stylesheet' />
       <meta name='description' content="Alec Flatness' website and porfolio"/>
     </Head>
     <header className={styles.header}>
@@ -24,8 +26,7 @@ const Layout = ({ children, home }) => (
             alt={name}
             />
           <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          <h3>Full-stack Software Engineer</h3>
-          <br/>
+          <h3 className={utilStyles.headingXl}>Full-stack Software Engineer</h3>
           <div  className={styles.buttonHdr}>
             <div>
               <Link href='http://linkedin.com/in/aflatness/'>
@@ -70,7 +71,7 @@ const Layout = ({ children, home }) => (
     {!home && (
       <div className={styles.backToHome}>
         <Link href='/'>
-          <a><span>&#8592;</span> Back to home</a>
+          <a><span>&#8592;</span> Home</a>
         </Link>
       </div>
     )}

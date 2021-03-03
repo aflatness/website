@@ -13,6 +13,7 @@
 
 .buttonHdr {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .buttonHdr>* {
