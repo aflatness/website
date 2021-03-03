@@ -21,7 +21,7 @@ export default function FirstPost() {
       <Image
           priority
           src='/images/moodlist.gif'
-          height={339}
+          height={330}
           width={600}
           alt='MoodList'
       />
