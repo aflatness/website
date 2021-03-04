@@ -122,3 +122,9 @@
 .gif {
   text-align: center;
 }
+
+.appTitle {
+  font-size: 3em;
+  margin: .3em 0;
+  text-align: center;
+}

@@ -11,7 +11,7 @@ export default function FirstPost() {
       <Head>
         <title>Mood List</title>
       </Head>
-      <h1 className={utilStyles.headingXl}>
+      <h1 className={utilStyles.appTitle}>
         <a href='https://moodlist-heroku.herokuapp.com' target='_blank' >
           MoodList
         </a>
