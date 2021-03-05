@@ -86,21 +86,25 @@
   padding: 1em 3em;
   max-width: stretch;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .infoBlock {
   margin: 0 .2em;
   text-align: center;
   color: rgb(75, 75, 75);
+  flex: 1 1 0px;
 }
 
-.infoBlockBreak {
-  width: .1em;
-  margin-top: 4em;
-  margin-bottom: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
-  background: rgb(170, 170, 170)
+@media (min-width: 500px) {
+  .infoBlockBreak {
+    width: .1em;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    background: rgb(170, 170, 170)
+  }
 }
 
 .infoBlock p {
@@ -108,10 +112,6 @@
   font-size: 1.1em;
   line-height: 1.2em;
   padding: .5em;
-}
-
-.skillBlock {
-  width: 6.8em;
 }
 
 .skillBlock>* {
@@ -127,4 +127,9 @@
   font-size: 3em;
   margin: .3em 0;
   text-align: center;
+}
+
+.skillRow {
+  display: flex;
+  flex-direction: horizontal;
 }

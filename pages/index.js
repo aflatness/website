@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout, { name } from '../components/layout';
 import utilStyles from '../components/utils.module.css';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 export default function Home() {
   return (
@@ -13,10 +14,22 @@ export default function Home() {
         <div className={utilStyles.infoBlock}>
           <h2>Skills</h2>
           <div className={utilStyles.skillBlock}>
-            <div>Javascript {'&'} React</div>
-            <div>MongoDB with Mongoose</div>
-            <div>Express {'&'} Node.js</div>
-            <div>HTML {'&'} CSS</div>
+            <div className={utilStyles.skillRow}>
+              <div>Javascript {'&'} React</div>
+              <LinearProgress variant="determinate" value={90} />
+            </div>
+            <div className={utilStyles.skillRow}>
+              <div>MongoDB with Mongoose</div>
+              <LinearProgress variant="determinate" value={80} />
+            </div>
+            <div className={utilStyles.skillRow}>
+              <div>Express {'&'} Node.js</div>
+              <LinearProgress variant="determinate" value={84} />
+            </div>
+            <div className={utilStyles.skillRow}>
+              <div>HTML {'&'} CSS</div>
+              <LinearProgress variant="determinate" value={75} />
+            </div>
           </div>
         </div>
         <div className={utilStyles.infoBlockBreak}></div>
