@@ -45,9 +45,9 @@ export default function Home() {
         <div className={utilStyles.infoBlockBreak}></div>
         <div className={utilStyles.infoBlock}>
           <h2>Links</h2>
-          <Link href='/blog'>
+          {/* <Link href='/blog'>
             <button className={utilStyles.appBtn}>Blog</button>
-          </Link>
+          </Link> */}
           <h3>Projects</h3>
           <Link href='/projects/moodlist'>
             <button className={utilStyles.appBtn}>MoodList</button>
