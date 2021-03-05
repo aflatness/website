@@ -30,6 +30,10 @@ export default function Home() {
               <div>HTML {'&'} CSS</div>
               <LinearProgress variant="determinate" value={75} />
             </div>
+            <div className={utilStyles.skillRow}>
+              <div>AWS</div>
+              <LinearProgress variant="determinate" value={69} />
+            </div>
           </div>
         </div>
         <div className={utilStyles.infoBlockBreak}></div>

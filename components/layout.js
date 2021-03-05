@@ -40,7 +40,16 @@ const Layout = ({ children, home }) => (
             </div>
             <div>
               <Link href='http://github.com/aflatness'>
-                <a target='_blank'><button className={utilStyles.emailBtn}>Github</button></a>
+                <a target='_blank'><button className={utilStyles.emailBtn}>
+                  <Image
+                    priority
+                    src='/images/github.png'
+                    className={utilStyles.logo}
+                    height={20}
+                    width={20}
+                    alt='github'
+                  />
+                  {' '}Github</button></a>
               </Link>
             </div>
           </div>
@@ -77,9 +86,9 @@ const Layout = ({ children, home }) => (
     )}
     <main>{children}</main>
     <br />
-    <div className={styles.copyright}>
+    <footer className={styles.copyright}>
       <span>&#169; 2021</span>Made with love by Alec Flatness
-    </div>
+    </footer>
   </div>
 );
 

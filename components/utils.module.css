@@ -63,6 +63,15 @@
   margin-bottom: 2em;
 }
 
+.emailBtn {
+  width: 7em;
+  max-width: 10em;
+}
+
+/* .logo {
+  /* margin-top: .1em !important; */
+/* } */
+
 .appBtn {
   margin-bottom: 1em;
 }
