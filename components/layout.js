@@ -30,7 +30,15 @@ const Layout = ({ children, home }) => (
           <div  className={styles.buttonHdr}>
             <div>
               <Link href='http://linkedin.com/in/aflatness/'>
-                <a target='_blank'><button className={utilStyles.emailBtn}>LinkedIn</button></a>
+                <a target='_blank'><button className={utilStyles.emailBtn}>
+                <Image
+                    priority
+                    src='/images/linkedin.png'
+                    className={utilStyles.logo}
+                    height={20}
+                    width={20}
+                    alt='linkedin'
+                  />{' '}LinkedIn</button></a>
               </Link>
             </div>
             <div>
