@@ -16,22 +16,27 @@ export default function Home() {
           <div className={utilStyles.skillBlock}>
             <div className={utilStyles.skillRow}>
               <div>Javascript {'&'} React</div>
+              <br />
               <LinearProgress variant="determinate" value={90} />
             </div>
             <div className={utilStyles.skillRow}>
               <div>MongoDB with Mongoose</div>
+              <br />
               <LinearProgress variant="determinate" value={80} />
             </div>
             <div className={utilStyles.skillRow}>
               <div>Express {'&'} Node.js</div>
+              <br />
               <LinearProgress variant="determinate" value={84} />
             </div>
             <div className={utilStyles.skillRow}>
               <div>HTML {'&'} CSS</div>
+              <br />
               <LinearProgress variant="determinate" value={75} />
             </div>
             <div className={utilStyles.skillRow}>
               <div>AWS</div>
+              <br />
               <LinearProgress variant="determinate" value={69} />
             </div>
           </div>

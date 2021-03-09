@@ -150,7 +150,7 @@
 }
 
 .skillRow {
-  display: flex;
-  flex-direction: horizontal;
-  justify-content: center;
+  text-align: left;
+  position: relative;
+  left: 10%;
 }

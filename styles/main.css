@@ -4,6 +4,7 @@ html, body {
   font-size: 18px;
   margin: 0 0 0 0;
   height: 100%;
+  background-color: rgb(251, 240, 228);
 }
 
 a {
@@ -30,11 +31,9 @@ img {
 
 .MuiLinearProgress-root {
   height: .64em !important;
-  width: 10em;
+  width: 81%;
   overflow: hidden;
   border: 0px solid white;
   position: relative;
-  border-radius: 1em;
-  margin-left: 1em;
-  margin-top: .2em;
+  border-radius: .2em;
 }
