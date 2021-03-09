@@ -10,6 +10,7 @@ export default function Blog () {
         <title>Blog</title>
       </Head>
         <h1 className={utilStyles.heading2XL}>My Blog</h1>
+        <div>A series of coding problems, solutions, and my thoughts afterwards.</div>
     </Layout>
   )
 }
