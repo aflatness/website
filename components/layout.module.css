@@ -11,7 +11,7 @@
   margin: 1em 1em 0;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromBottom {
   from {
     transform: translateY(30%);
     opacity: 0;
@@ -30,7 +30,7 @@
 .buttonHdr>* {
   margin: 0 15px;
   flex: 1 1 0;
-  animation-name: slideInFromLeft;
+  animation-name: slideInFromBottom;
   animation-duration: 1s;
 }
 
