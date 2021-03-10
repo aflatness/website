@@ -31,7 +31,6 @@
 
 .headingXl {
   font-size: 1.3em;
-  letter-spacing: -0.05rem;
   margin-top: .7em;
   text-align: center;
   animation-name: slideFromRight;
@@ -45,10 +44,23 @@
 }
 
 .headingMd, .headingSm {
-  text-align: center;
+  /* text-align: center; */
   padding: 1em 3em;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+  .appCont {
+    display: flex;
+    flex: wrap;
+  }
+  .appCont>* {
+    flex: 1 1 0px;
+  }
+  .gif {
+    margin-top: 4%;
+  }
 }
 
 .borderCircle {
@@ -111,7 +123,6 @@
 
 #infoSection {
   padding: 1em 3em;
-  max-width: stretch;
 }
 
 .infoBlock {
@@ -124,6 +135,7 @@
 @media (min-width: 900px) {
   .infoBlock {
     float: left;
+    /* display: inline-block; */
     width: 33%;
     height: 28em;
   }
@@ -167,6 +179,7 @@
 }
 
 .gif {
+  display: block;
   text-align: center;
 }
 

@@ -16,16 +16,26 @@ export default function FirstPost() {
           MoodList
         </a>
       </h1>
-      <div className={utilStyles.headingMd}>MoodList creates a curated Spotify playlist based a users current mood and top 50 listened to tracks </div>
-      <div className={utilStyles.gif}>
-      <Image
-          priority
-          src='/images/moodlist.gif'
-          height={330}
-          width={600}
-          alt='MoodList'
-      />
+      <div className={utilStyles.appCont}>
+        <div className={utilStyles.headingMd}>
+          <div>MoodList creates a curated Spotify playlist based a Spotify users current mood and their top 50 listened to tracks
+          </div>
+          <div>
+            <h3><u>Technologies used:</u></h3>
+            React, React-Bootstrap, Spotify API, Express, Node.js, MongoDB Cloud Atlas, Mongoose, Heroku
+          </div>
+        </div>
+        <div className={utilStyles.gif}>
+          <Image
+              priority
+              src='/images/moodlist.gif'
+              height={330}
+              width={600}
+              alt='MoodList'
+          />
+        </div>
       </div>
+
     </Layout>
     )
 }

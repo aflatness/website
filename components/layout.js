@@ -11,7 +11,8 @@ const Layout = ({ children, home }) => (
     <Head>
       <link rel='icon' href='/favicon.ico' />
       <link rel='preconnect' href='https://fonts.gstatic.com' />
-      <link href='https://fonts.googleapis.com/css2?family=Varela+Round&display=swap' rel='stylesheet' />
+      {/* <link href='https://fonts.googleapis.com/css2?family=Varela+Round&display=swap' rel='stylesheet' /> */}
+      <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"></link>
       <meta name='description' content="Alec Flatness' website and porfolio"/>
     </Head>
     <header className={styles.header}>
