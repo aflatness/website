@@ -32,12 +32,12 @@ export default function Home() {
             <div className={utilStyles.skillRow}>
               <div>HTML {'&'} CSS</div>
               <br />
-              <LinearProgress variant="determinate" value={75} />
+              <LinearProgress variant="determinate" value={78} />
             </div>
             <div className={utilStyles.skillRow}>
-              <div>AWS</div>
+              <div>Amazon Web Services</div>
               <br />
-              <LinearProgress variant="determinate" value={69} />
+              <LinearProgress variant="determinate" value={70} />
             </div>
           </div>
         </div>
