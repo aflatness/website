@@ -22,16 +22,21 @@
   }
 }
 
-.buttonHdr {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .buttonHdr>* {
-  margin: 0 15px;
-  flex: 1 1 0;
+  margin: -15px 15px;
   animation-name: slideInFromBottom;
   animation-duration: 1s;
+}
+
+@media (min-width: 550px) {
+  .buttonHdr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .buttonHdr>* {
+    flex: 1 1 0px;
+    margin: 0 15px;
+  }
 }
 
 .copyright {
