@@ -45,5 +45,5 @@ img {
 }
 
 .MuiLinearProgress-bar1Determinate {
-  animation: skill .6s linear !important;
+  animation: skill 1s linear !important;
 }
