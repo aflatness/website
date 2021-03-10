@@ -37,3 +37,13 @@ img {
   position: relative;
   border-radius: .2em;
 }
+
+@keyframes skill {
+  from {
+    transform: translateX(-80%);
+  }
+}
+
+.MuiLinearProgress-bar1Determinate {
+  animation: skill .6s linear !important;
+}
