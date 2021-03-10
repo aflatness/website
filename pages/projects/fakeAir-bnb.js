@@ -17,16 +17,14 @@ export default function FirstPost() {
         </a>
       </h1>
       <div className={utilStyles.appCont}>
-        <div className={utilStyles.headingSm}>
-          <div>A full-stack application project, mocking an Airbnb listing page for 20 different home. Browse by changing the ending url number, between 1-20.</div>
-          <br />
-          <div> FakeAir-bnb utilizes Google Maps JS API and React-Bootstrap for a dynamic, responsive front-end, with Express, Node.JS, and Mongoose hosting the server and data handling.</div>
+        <ul className={utilStyles.headingSm}>
+          <li>A full-stack application project, mocking an Airbnb listing page for 20 different home. Browse by changing the ending url number, between 1-20.</li>
+          <li> FakeAir-bnb utilizes Google Maps JS API and React-Bootstrap for a dynamic, responsive front-end, with Express, Node.js, and Mongoose hosting the server and data handling.</li>
           <div>
             <h3><u>Technologies used:</u></h3>
             React, React-Bootstrap, React-Router, Express, Node.js, Jest, Enzyme, MongoDB, Mongoose, Heroku, AWS EC2, S3
           </div>
-        </div>
-
+        </ul>
         <div className={utilStyles.gif}>
           <Image
             priority

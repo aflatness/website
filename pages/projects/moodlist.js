@@ -17,14 +17,17 @@ export default function FirstPost() {
         </a>
       </h1>
       <div className={utilStyles.appCont}>
-        <div className={utilStyles.headingMd}>
-          <div>MoodList creates a curated Spotify playlist based a Spotify users current mood and their top 50 listened to tracks
-          </div>
+        <ul className={utilStyles.headingMd}>
+          <li>MoodList creates a curated Spotify playlist based a Spotify users current mood and their top 50 listened to tracks.</li>
+          <li>Offers ability to save the curated playlist to the user's profile, as well as a viewable history of use, to access previously created playlists.
+          </li>
+          <li>Stores the users session for easy log in, valid throughout the access token authorization.
+          </li>
           <div>
             <h3><u>Technologies used:</u></h3>
             React, React-Bootstrap, Spotify API, Express, Node.js, MongoDB Cloud Atlas, Mongoose, Heroku
           </div>
-        </div>
+        </ul>
         <div className={utilStyles.gif}>
           <Image
               priority
