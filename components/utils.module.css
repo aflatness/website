@@ -127,6 +127,7 @@
     width: 33%;
     height: 28em;
   }
+
   .infoBlock::after {
     content: '';
     position: absolute;
@@ -134,7 +135,7 @@
     width: 2px;
     height: auto;
     right: 0;
-    top: 25%;
+    top: 10%;
     bottom: 10%;
     background: #d0d0d0;
   }
@@ -155,7 +156,7 @@
 
 .infoBlock p {
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.2em;
   padding: .5em;
 }
