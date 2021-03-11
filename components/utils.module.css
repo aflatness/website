@@ -15,7 +15,7 @@
   letter-spacing: -0.1rem;
   margin: .1em;
   animation-name: slideFromLeft;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @keyframes slideFromRight {
@@ -34,7 +34,7 @@
   margin-top: .7em;
   text-align: center;
   animation-name: slideFromRight;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .headingLg {
@@ -167,11 +167,22 @@
   }
 }
 
+@keyframes slideFromTop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
+  }
+}
+
 .infoBlock p {
   text-align: left;
   font-size: 1em;
   line-height: 1.2em;
   padding: .5em;
+  animation-name: slideFromTop;
+  animation-duration: 2s;
 }
 
 .skillBlock>* {

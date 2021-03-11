@@ -25,7 +25,7 @@
 .buttonHdr>* {
   margin: -15px 15px;
   animation-name: slideInFromBottom;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @media (min-width: 550px) {
