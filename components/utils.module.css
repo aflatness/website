@@ -14,15 +14,16 @@
   font-family: 'Source Serif Pro';
   font-weight: normal;
   margin: .1em .8em;
-  font-style: oblique;
+  font-style: italic;
   animation-name: slideFromLeft;
   animation-duration: 2s;
+  text-align: center;
 }
 
 @keyframes slideFromRight {
   from {
     opacity: 0;
-    transform: translateX(-80%);
+    transform: translateX(80%);
   }
   to {
     opacity: 1 !important;
@@ -31,13 +32,14 @@
 }
 
 .headingXl {
-  font-size: 2em;
+  display: inline-block;
+  font-size: 1em;
   font-weight: normal;
   font-family: 'Source Serif Pro';
-  margin: .5em 0;
+  margin: .3em 0;
   text-align: center;
   animation-name: slideFromRight;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
 }
 
 .headingLg {
@@ -65,64 +67,12 @@
     margin-top: 3.5em;
   }
 }
-
 .borderCircle {
   border-radius: 9999px;
 }
 
 .colorInherit {
   color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.listItem {
-  margin: 0 0 1.25rem;
-}
-
-.lightText {
-  color: #666;
-}
-
-.appBtn, .emailBtn {
-  font-size: 1.2em;
-  color: white;
-  background-color: rgb(0, 110, 161);
-  padding: 7px 18px;
-  border-radius: 3px;
-  transition: background-color .25s;
-  outline: none;
-  margin-bottom: 2em;
-}
-
-.emailBtn {
-  width: 7em;
-  max-width: 10em;
-  border: 1px solid #fff;
-}
-
-.appBtn {
-  margin-bottom: 1em;
-  border: 1px solid rgb(251, 240, 228);
-}
-
-.emailBtn:hover {
-  background-color: #fff;
-  cursor: pointer;
-  color: rgb(1, 90, 131);
-}
-
-.appBtn:hover {
-  background-color:rgb(0, 139, 204);
-  cursor: pointer;
 }
 
 #infoSection {
@@ -150,10 +100,6 @@
 
 .profileContainer {
   text-align: center;
-  /* margin-top: 1em; */
-  /* height: stretch;
-  width: stretch; */
-  /* margin: 0 !important; */
 }
 
 @keyframes slideFromTop {
@@ -181,7 +127,7 @@
 }
 
 .techBlock {
-  background-color: rgb(1, 94, 138) ;
+  background-color: rgb(1, 94, 138);
   color: rgb(251, 240, 228);
   margin-left: 0;
   padding-left: 1em;
@@ -222,10 +168,4 @@
   font-size: 3em;
   margin: .3em 0;
   text-align: center;
-}
-
-
-
-.emailBtn div {
-  vertical-align: -10%;
 }

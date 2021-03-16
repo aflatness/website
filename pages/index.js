@@ -101,19 +101,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/*
-        <div className={utilStyles.infoBlock}>
-          <h2>Links</h2>
-          <h3>Projects</h3>
-          <Link href='/projects/moodlist'>
-              <button className={utilStyles.appBtn}>MoodList</button>
-          </Link>
-          <br />
-          <Link href='/projects/fakeAir-bnb'>
-            <button className={utilStyles.appBtn}>FakeAir-bnb</button>
-          </Link>
-        </div>
-      </section> */}
     </Layout>
   )
 }

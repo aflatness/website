@@ -18,51 +18,8 @@ const Layout = ({ children, home }) => (
     <header className={styles.header}>
       {home ? (
         <>
-          {/* <Image
-            priority
-            src='/images/profile_pic.jpg'
-            className={utilStyles.borderCircle}
-            height={150}
-            width={150}
-            alt={name}
-            /> */}
-          <h1 className={utilStyles.heading2Xl}>Hello,</h1>
-          <h3 className={utilStyles.headingXl}>I'm Alec Flatness</h3>
-          {/* <div  className={styles.buttonHdr}>
-            <div>
-              <Link href='http://linkedin.com/in/aflatness/'>
-                <a target='_blank'><button className={utilStyles.emailBtn}>
-                <Image
-                    priority
-                    src='/images/linkedin.png'
-                    className={utilStyles.logo}
-                    height={20}
-                    width={20}
-                    alt='linkedin'
-                  />{' '}LinkedIn</button></a>
-              </Link>
-            </div>
-            <div>
-              <Link href='mailto:aflatness@gmail.com'>
-                <button className={utilStyles.emailBtn}>Email me</button>
-              </Link>
-            </div>
-            <div>
-              <Link href='http://github.com/aflatness'>
-                <a target='_blank'><button className={utilStyles.emailBtn}>
-                  <Image
-                    priority
-                    src='/images/github.png'
-                    className={utilStyles.logo}
-                    height={20}
-                    width={20}
-                    alt='github'
-                  />
-                  {' '}Github</button></a>
-              </Link>
-            </div>
-          </div> */}
-
+          <h1 className={utilStyles.heading2Xl}>Hello,{'   '}
+          <div className={utilStyles.headingXl}>I'm Alec Flatness</div></h1>
         </>
       ) : (
         <>
@@ -94,9 +51,49 @@ const Layout = ({ children, home }) => (
       </div>
     )}
     <main>{children}</main>
-    <br />
     <footer className={styles.copyright}>
-      <span>&#169; 2021</span>Made with love by Alec Flatness
+      <div className={styles.socialBtns}>
+        <Link href='http://github.com/aflatness'>
+          <a target='_blank'>
+            <button className={styles.emailBtn}>
+              <Image
+                priority
+                src='/images/github.png'
+                className={utilStyles.logo}
+                height={20}
+                width={20}
+                alt='github'
+                />
+              {' '}
+              Github
+            </button>
+          </a>
+        </Link>
+        <Link href='http://linkedin.com/in/aflatness/'>
+          <a target='_blank'>
+            <button className={styles.emailBtn}>
+              <Image
+                  priority
+                  src='/images/linkedin.png'
+                  className={utilStyles.logo}
+                  height={20}
+                  width={20}
+                  alt='linkedin'
+                  />{' '}
+                LinkedIn
+            </button>
+          </a>
+        </Link>
+      </div>
+      <Link href='mailto:aflatness@gmail.com'>
+        <div id={styles.footer_email}>
+          <img id={styles.email_icon} src='/images/email.svg'/>
+          <div id={styles.email_address}>aflatness@gmail.com</div>
+        </div>
+      </Link>
+      <div id={styles.footer_Copyright}>
+        <span> &#169; 2021</span> Alec Flatness
+      </div>
     </footer>
   </div>
 );
