@@ -77,27 +77,29 @@ export default function Home() {
       <section id={utilStyles.infoSection} className={utilStyles.projectBlock}>
         <div className={utilStyles.infoBlock}>
           <h1 className={utilStyles.infoTitle}>Projects</h1>
-          <div className={utilStyles.project}>
-            <Link href='/projects/moodlist'><div className={`${utilStyles.infoTitle} ${utilStyles.projectLink}`}>MoodList</div></Link>
-            <br />
-            <Image
-              src='/images/moodlist.jpg'
-              priority
-              height='281em'
-              width='450em'
-              alt='MoodList'
-              />
-          </div>
-          <div className={utilStyles.project}>
-            <Link href='/projects/fakeAir-bnb'><div className={`${utilStyles.infoTitle} ${utilStyles.projectLink}`}>FakeAir-bnb</div></Link>
-            <br />
-            <Image
-              src='/images/fakeAir-bnb.jpg'
-              priority
-              height='281em'
-              width='450em'
-              alt='FakeAir-bnb'
-              />
+          <div className={utilStyles.projectFlex}>
+            <div className={utilStyles.project}>
+              <Link href='/projects/moodlist'><div className={`${utilStyles.infoTitle} ${utilStyles.projectLink}`}>MoodList</div></Link>
+              <br />
+              <Image
+                src='/images/moodlist.jpg'
+                priority
+                height='281em'
+                width='450em'
+                alt='MoodList'
+                />
+            </div>
+            <div className={utilStyles.project}>
+              <Link href='/projects/fakeAir-bnb'><div className={`${utilStyles.infoTitle} ${utilStyles.projectLink}`}>FakeAir-bnb</div></Link>
+              <br />
+              <Image
+                src='/images/fakeAir-bnb.jpg'
+                priority
+                height='281em'
+                width='450em'
+                alt='FakeAir-bnb'
+                />
+            </div>
           </div>
         </div>
       </section>

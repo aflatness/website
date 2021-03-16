@@ -1,50 +1,19 @@
 .header {
   color: rgb(245, 245, 245);
-  /* display: flex;
-  flex-direction: column; */
   align-items: center;
   padding: .5rem;
   background-color: rgb(1, 94, 138);
-  /* background-image: linear-gradient(#2460a7ff, rgb(0, 118, 173)); */
 }
 
 .backToHome {
   margin: 1em 1em 0;
 }
 
-@keyframes slideInFromBottom {
-  from {
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1
-  }
-}
-
-.buttonHdr>* {
-  margin: -15px 15px;
-  animation-name: slideInFromBottom;
-  animation-duration: 2s;
-}
-
-@media (min-width: 550px) {
-  .buttonHdr {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .buttonHdr>* {
-    flex: 1 1 0px;
-    margin: 0 15px;
-  }
-}
-
 .socialBtns {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 .emailBtn {
@@ -56,8 +25,7 @@
   border-radius: 3px;
   transition: background-color .25s;
   outline: none;
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin: 0 1em;
   width: 7em;
   max-width: 10em;
   border: 1px solid #fbf0e4;
@@ -69,10 +37,14 @@
   color: rgb(1, 94, 138);
 }
 
+.emailBtn div {
+  vertical-align: -.12em;
+}
+
 .copyright {
   background-color:rgb(1, 94, 138);
   line-height: 24px;
-  padding: 1.5em 2em;
+  padding: 1em 2em;
   text-align: center;
   letter-spacing: .05em;
   color:rgb(245, 245, 245) !important;
@@ -123,5 +95,15 @@
 
   #email_address {
     display: inline-block !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .socialBtns {
+    display: block !important;
+  }
+  .socialBtns>* {
+    display: block;
+    margin-bottom: 1em;
   }
 }

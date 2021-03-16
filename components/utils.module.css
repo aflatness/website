@@ -58,7 +58,7 @@
 @media (min-width: 1030px) {
   .appCont {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
   }
   .appCont>* {
     flex: 1 1 0px;
@@ -77,7 +77,7 @@
 
 #infoSection {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 #infoSection>* {
@@ -135,8 +135,7 @@
 
 .techRow {
   font-size: 1.2em;
-  margin: .9em .5em;
-  height: 47.52px;
+  margin: 2em .5em;
 }
 
 .projectBlock {
@@ -147,16 +146,30 @@
   color: rgb(251, 240, 228) !important;
 }
 
+.projectFlex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2em;
+}
+
+.projectFlex>* {
+  flex: 50%;
+}
+
 .project {
-  display: inline-block;
   text-align: center;
-  width: 50%;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .projectLink {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .projectFlex {
+    display: block;
+  }
 }
 
 .gif {
