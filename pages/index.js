@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>{name}</title>
       </Head>
-      <section id={utilStyles.infoSection} className={utilStyles.aboutBlock}>
+      <section className={`${utilStyles.infoSection} ${utilStyles.aboutBlock}`}>
         <div className={utilStyles.infoBlock}>
           <h1 className={utilStyles.infoTitle}>About Me</h1>
           <p>I'm Alec Flatness, a 27 year-old software developer that loves to work on full-stack web applications. I create whatever comes to mind, whether it's designing a dynamic, beautiful front-end, or architeching a well organized, responsive back-end. Currently I reside in stunning Denver, Colorado, but frequently travel back to the Bay Area of California to visit friends and family.</p>
@@ -27,7 +27,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id={utilStyles.infoSection}>
+      <section className={utilStyles.infoSection}>
         <div className={utilStyles.infoBlock}>
           <h1 className={utilStyles.infoTitle}>Skills</h1>
           <div className={utilStyles.skillBlock}>
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id={utilStyles.infoSection} className={utilStyles.projectBlock}>
+      <section className={`${utilStyles.projectBlock} ${utilStyles.infoSection}`}>
         <div className={utilStyles.infoBlock}>
           <h1 className={utilStyles.infoTitle}>Projects</h1>
           <div className={utilStyles.projectFlex}>
