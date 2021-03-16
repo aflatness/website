@@ -92,7 +92,7 @@
 .appBtn, .emailBtn {
   font-size: 1.2em;
   color: white;
-  background-color: rgb(2, 207, 197);
+  background-color: rgb(0, 110, 161);
   padding: 7px 18px;
   border-radius: 3px;
   transition: background-color .25s;
@@ -114,11 +114,11 @@
 .emailBtn:hover {
   background-color: #fff;
   cursor: pointer;
-  color: rgb(2, 207, 197);
+  color: rgb(1, 90, 131);
 }
 
 .appBtn:hover {
-  background-color:rgb(2, 170, 161);
+  background-color:rgb(0, 139, 204);
   cursor: pointer;
 }
 
