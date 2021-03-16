@@ -18,17 +18,17 @@ const Layout = ({ children, home }) => (
     <header className={styles.header}>
       {home ? (
         <>
-          <Image
+          {/* <Image
             priority
             src='/images/profile_pic.jpg'
             className={utilStyles.borderCircle}
             height={150}
             width={150}
             alt={name}
-            />
-          <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          <h3 className={utilStyles.headingXl}>Full-stack Software Engineer</h3>
-          <div  className={styles.buttonHdr}>
+            /> */}
+          <h1 className={utilStyles.heading2Xl}>Hello,</h1>
+          <h3 className={utilStyles.headingXl}>I'm Alec Flatness</h3>
+          {/* <div  className={styles.buttonHdr}>
             <div>
               <Link href='http://linkedin.com/in/aflatness/'>
                 <a target='_blank'><button className={utilStyles.emailBtn}>
@@ -61,7 +61,7 @@ const Layout = ({ children, home }) => (
                   {' '}Github</button></a>
               </Link>
             </div>
-          </div>
+          </div> */}
 
         </>
       ) : (
