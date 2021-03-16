@@ -8,7 +8,7 @@ html, body {
 }
 
 a {
-  color: rgb(0, 110, 161);
+  color: rgb(1, 94, 138);
   text-decoration: none;
 }
 
@@ -22,11 +22,11 @@ img {
 }
 
 .MuiLinearProgress-colorPrimary {
-  background-color: #b3c7d6ff !important;
+  background-color: rgba(128, 204, 240, 0.5) !important;
 }
 
 .MuiLinearProgress-barColorPrimary {
-  background-color: rgb(0, 118, 173) !important;
+  background-color: rgb(1, 94, 138) !important;
 }
 
 .MuiLinearProgress-root {
