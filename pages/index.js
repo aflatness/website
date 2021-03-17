@@ -22,7 +22,7 @@ export default function Home() {
             priority
             src='/images/profile_pic.jpg'
             height='350em'
-            width='stetch'
+            width='400%'
             alt='ProfilePic'
           />
         </div>

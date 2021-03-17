@@ -99,7 +99,8 @@
 }
 
 .profileContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes slideFromTop {
@@ -115,7 +116,6 @@
   text-align: left;
   font-size: 1.3em;
   line-height: 1.2em;
-  margin: .5em;
   animation-name: slideFromTop;
   animation-duration: 3s;
 }
@@ -130,6 +130,7 @@
   background-color: rgb(1, 94, 138);
   color: rgb(251, 240, 228);
   margin-left: 0;
+  padding-right: 2em;
   padding-left: 1em;
 }
 
