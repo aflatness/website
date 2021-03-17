@@ -41,18 +41,20 @@ const Layout = ({ children, home }) => (
         </>
       ) : (
         <>
-          <Link href='/'>
-            <a>
-              <Image
-                priority
-                src='/images/profile_pic.jpg'
-                className={utilStyles.borderCircle}
-                height={100}
-                width={100}
-                alt={name}
-              />
-            </a>
-          </Link>
+          <div className={styles.headerImage}>
+            <Link href='/'>
+              <a>
+                <Image
+                  priority
+                  src='/images/profile_pic.jpg'
+                  className={utilStyles.borderCircle}
+                  height={100}
+                  width={100}
+                  alt={name}
+                />
+              </a>
+            </Link>
+          </div>
           <h2 className={utilStyles.headingLg}>
             <Link href='/'>
               <a className={utilStyles.colorInherit}>{name}</a>
