@@ -4,6 +4,26 @@
   padding: .5rem;
   background-color: rgb(1, 94, 138);
 }
+@keyframes helloWorld {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .85;
+  }
+}
+
+#hello {
+  text-align: center;
+  margin-top: -1.5em;
+  margin-bottom: .5em;
+  opacity: .85;
+  animation-name: helloWorld;
+  animation-duration: 2.7s;
+}
 
 .backToHome {
   margin: 1em 1em 0;

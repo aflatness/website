@@ -20,6 +20,12 @@
   text-align: center;
 }
 
+@media (max-width: 390px) {
+  .heading2Xl {
+    font-size: 3em;
+  }
+}
+
 @keyframes slideFromRight {
   from {
     opacity: 0;

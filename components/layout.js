@@ -18,8 +18,9 @@ const Layout = ({ children, home }) => (
     <header className={styles.header}>
       {home ? (
         <>
-          <h1 className={utilStyles.heading2Xl}>Hello,{'   '}
-          <div className={utilStyles.headingXl}>I'm Alec Flatness</div></h1>
+          <h1 className={utilStyles.heading2Xl}>Welcome,{'   '}
+          <div className={utilStyles.headingXl}>Internet</div></h1>
+          <div id={styles.hello}>(Hello, World)</div>
         </>
       ) : (
         <>
