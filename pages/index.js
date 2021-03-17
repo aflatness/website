@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
-        <title>{name}</title>
+        <title>{name}' portfolio</title>
       </Head>
       <section className={`${utilStyles.infoSection} ${utilStyles.aboutBlock}`}>
         <div className={utilStyles.infoBlock}>
