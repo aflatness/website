@@ -15,7 +15,7 @@ const Layout = ({ children, home }) => (
       <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"></link>
       <meta name='description' content="Alec Flatness' software engineering website and portfolio"/>
 
-      <meta name='twitter:card' content="Alec Flatness' software engineering website and portfolio"/>
+      <meta name='twitter:card' content="summary"/>
       <meta name='twitter:title' content="Alec Flatness' portfolio"/>
       <meta name='twitter:creator' content='@AFlatMajor4'/>
       <meta name='twitter:description' content="Alec Flatness' software engineering website and portfolio"/>
@@ -30,7 +30,7 @@ const Layout = ({ children, home }) => (
 
       <meta itemprop="name" content="Alec Flatness' portfolio"/>
       <meta itemprop="description" content="Alec Flatness' software engineering website and portfolio"/>
-      <meta itemprop="image" content="http://www.example.com/image.jpg"/>
+      <meta itemprop="image" content="/images/profile_pic2.jpeg"/>
     </Head>
     <header className={styles.header}>
       {home ? (
