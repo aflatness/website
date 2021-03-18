@@ -20,17 +20,17 @@ const Layout = ({ children, home }) => (
       <meta name='twitter:creator' content='@AFlatMajor4'/>
       <meta name='twitter:description' content="Alec Flatness' software engineering website and portfolio"/>
 
-      <meta name="twitter:image" content="/images/profile_pic2.jpeg"></meta>
+      <meta name="twitter:image" content="https://www.alecflatness.com/images/profile_pic2.jpeg"></meta>
       <meta property="og:title" content="Alec Flatness' portfolio"/>
       <meta property="og:type" content="website"/>
-      <meta property="og:url" content="http://www.alecflatness.com/"/>
-      <meta property="og:image" content="/images/profile_pic2.jpeg"/>
+      <meta property="og:url" content="https://www.alecflatness.com/"/>
+      <meta property="og:image" content="https://www.alecflatness.com/images/profile_pic2.jpeg"/>
       <meta property="og:description" content="Alec Flatness' software engineering website and portfolio"/>
       <meta property="og:site_name" content="Alec Flatness" />
 
       <meta itemprop="name" content="Alec Flatness' portfolio"/>
       <meta itemprop="description" content="Alec Flatness' software engineering website and portfolio"/>
-      <meta itemprop="image" content="/images/profile_pic2.jpeg"/>
+      <meta itemprop="image" content="https://www.alecflatness.com/images/profile_pic2.jpeg"/>
     </Head>
     <header className={styles.header}>
       {home ? (
