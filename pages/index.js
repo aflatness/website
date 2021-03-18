@@ -5,6 +5,11 @@ import Layout, { name } from '../components/layout';
 import utilStyles from '../components/utils.module.css';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
+import CodeIcon from '@material-ui/icons/Code';
+import ComputerSharpIcon from '@material-ui/icons/ComputerSharp';
+import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
+import DnsOutlinedIcon from '@material-ui/icons/DnsOutlined';
+
 export default function Home() {
   return (
     <Layout home>
@@ -61,16 +66,16 @@ export default function Home() {
         <div className={`${utilStyles.infoBlock} ${utilStyles.techBlock}`}>
           <h1 className={utilStyles.infoTitle}>Technologies</h1>
           <div className={utilStyles.techRow}>
-            <b>Front-end:</b> JavaScript, React.js, HTML5, CSS3, Next.js, Vue.js
+            <ComputerSharpIcon/>{': '} JavaScript, React.js, HTML5, CSS3, Next.js, Vue.js
           </div>
           <div className={utilStyles.techRow}>
-            <b>Back-end:</b> Node.js, Express, MongoDB, PostgresSQL, MySQL
+            <DnsOutlinedIcon/>{': '} Node.js, Express, MongoDB, PostgresSQL, MySQL
           </div>
           <div className={utilStyles.techRow}>
-            <b>Tools:</b> NPM, Webpack, Jest, Mocha, AWS EC2 & S3, Docker, Heroku, NGINX
+            <BuildOutlinedIcon /> {': '} NPM, Webpack, Jest, Mocha, AWS EC2 & S3, Docker, Heroku, NGINX
           </div>
           <div className={utilStyles.techRow}>
-            <b>Techniques:</b> Git Workflow, Agile development, Test Driven Development
+            <CodeIcon /> {': '} Git Workflow, Agile Development, Test Driven Development
           </div>
         </div>
       </section>
