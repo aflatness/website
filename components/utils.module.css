@@ -202,3 +202,7 @@
   margin: .3em 0;
   text-align: center;
 }
+
+.projImage img {
+  cursor: pointer;
+}
