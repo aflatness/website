@@ -1,3 +1,9 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
 .header {
   color: rgb(245, 245, 245);
   align-items: center;
@@ -33,6 +39,10 @@
 
 .backToHome {
   margin: 1em 1em 0;
+}
+
+.child {
+  flex: 1;
 }
 
 .socialBtns {

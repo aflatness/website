@@ -37,7 +37,7 @@ export default function Home() {
           <h1 className={utilStyles.infoTitle}>Skills</h1>
           <div className={utilStyles.skillBlock}>
             <div className={utilStyles.skillRow}>
-              <div>Javascript {'&'} React</div>
+              <div>Typescript {'&'} React</div>
               <br />
               <LinearProgress variant="determinate" value={90} />
             </div>
@@ -66,13 +66,13 @@ export default function Home() {
         <div className={`${utilStyles.infoBlock} ${utilStyles.techBlock}`}>
           <h1 className={utilStyles.infoTitle}>Technologies</h1>
           <div className={utilStyles.techRow}>
-            <ComputerSharpIcon/>{': '} JavaScript, React.js, HTML5, CSS3, Next.js, Vue.js
+            <ComputerSharpIcon/>{': '} Typescript, React.js, HTML5, CSS3, Next.js, Vue.js, Material-UI
           </div>
           <div className={utilStyles.techRow}>
-            <DnsOutlinedIcon/>{': '} Node.js, Express, MongoDB, PostgresSQL, MySQL
+            <DnsOutlinedIcon/>{': '} Node.js, Express, MongoDB, PostgresSQL, MySQL, ElasticSearch, GraphQL
           </div>
           <div className={utilStyles.techRow}>
-            <BuildOutlinedIcon /> {': '} NPM, Webpack, Jest, Mocha, AWS EC2 & S3, Docker, Heroku, NGINX
+            <BuildOutlinedIcon /> {': '} NPM, Webpack, Jest, Mocha, AWS: EC2, S3, Lambdas, Docker, Heroku, NGINX
           </div>
           <div className={utilStyles.techRow}>
             <CodeIcon /> {': '} Git Workflow, Agile Development, Test Driven Development
@@ -84,14 +84,33 @@ export default function Home() {
           <h1 className={utilStyles.infoTitle}>Projects</h1>
           <div className={utilStyles.projectFlex}>
             <div className={utilStyles.project}>
+              <Link href='/projects/kevinkeithmusician'>
+                <div className={`${utilStyles.infoTitle} ${utilStyles.projectLink}`}>
+                  Kevin Keith
+                </div>
+              </Link>
+              <br />
+              <div className={utilStyles.projImage}>
+                <Link href='/projects/kevinkeithmusician'>
+                  <Image
+                    src='/images/kevinkeith.png'
+                    priority
+                    height='281em'
+                    width='450em'
+                    alt='Kevin-Keith'
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className={utilStyles.project}>
               <Link href='/projects/moodlist'>
                 <div className={`${utilStyles.infoTitle} ${utilStyles.projectLink}`}>
                   MoodList
                 </div>
               </Link>
               <br />
-              <Link href='projects/moodlist'>
-                <div className={utilStyles.projImage}>
+              <div className={utilStyles.projImage}>
+                <Link href='projects/moodlist'>
                   <Image
                     src='/images/moodlist.jpg'
                     priority
@@ -99,8 +118,8 @@ export default function Home() {
                     width='450em'
                     alt='MoodList'
                   />
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
             <div className={utilStyles.project}>
               <Link href='/projects/fakeAir-bnb'>
@@ -109,8 +128,8 @@ export default function Home() {
                 </div>
               </Link>
               <br />
-              <Link href='/projects/fakeAir-bnb'>
-                <div className={utilStyles.projImage}>
+              <div className={utilStyles.projImage}>
+                <Link href='/projects/fakeAir-bnb'>
                   <Image
                     src='/images/fakeAir-bnb.jpg'
                     priority
@@ -118,8 +137,8 @@ export default function Home() {
                     width='450em'
                     alt='FakeAir-bnb'
                   />
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

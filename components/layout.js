@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './layout.module.css';
+import { layout, header, headerImage, hello, backToHome, child, copyright, socialBtns, emailBtn, footer_email, email_icon, email_address, footer_Copyright } from './layout.module.css';
 import utilStyles from './utils.module.css';
 
 export const name = 'Alec Flatness';
 
 const Layout = ({ children, home }) => (
-  <div className={styles.container}>
+  <div className={layout}>
     <Head>
       <link rel='icon' href='/favicon.ico' />
       <link rel='preconnect' href='https://fonts.gstatic.com' />
@@ -32,16 +32,16 @@ const Layout = ({ children, home }) => (
       <meta itemprop="description" content="Alec Flatness' software engineering website and portfolio"/>
       <meta itemprop="image" content="https://www.alecflatness.com/images/profile_pic2.jpeg"/>
     </Head>
-    <header className={styles.header}>
+    <header className={header}>
       {home ? (
         <>
           <h1 className={utilStyles.heading2Xl}>Hello,{'   '}
           <div className={utilStyles.headingXl}>World</div></h1>
-          <div id={styles.hello}>I'm Alec Flatness</div>
+          <div id={hello}>I'm Alec Flatness</div>
         </>
       ) : (
         <>
-          <div className={styles.headerImage}>
+          <div className={headerImage}>
             <Link href='/'>
               <a>
                 <Image
@@ -64,18 +64,18 @@ const Layout = ({ children, home }) => (
       )}
     </header>
     {!home && (
-      <div className={styles.backToHome}>
+      <div className={backToHome}>
         <Link href='/'>
           <a><span>&#8592;</span> Home</a>
         </Link>
       </div>
     )}
-    <main>{children}</main>
-    <footer className={styles.copyright}>
-      <div className={styles.socialBtns}>
+    <main className={child}>{children}</main>
+    <footer className={copyright}>
+      <div className={socialBtns}>
         <Link href='http://github.com/aflatness'>
           <a target='_blank'>
-            <button className={styles.emailBtn}>
+            <button className={emailBtn}>
               <Image
                 priority
                 src='/images/github.png'
@@ -91,7 +91,7 @@ const Layout = ({ children, home }) => (
         </Link>
         <Link href='http://linkedin.com/in/aflatness/'>
           <a target='_blank'>
-            <button className={styles.emailBtn}>
+            <button className={emailBtn}>
               <Image
                   priority
                   src='/images/linkedin.png'
@@ -106,13 +106,13 @@ const Layout = ({ children, home }) => (
         </Link>
       </div>
       <Link href='mailto:aflatness@gmail.com'>
-        <div id={styles.footer_email}>
-          <img id={styles.email_icon} src='/images/email.svg'/>
-          <div id={styles.email_address}>aflatness@gmail.com</div>
+        <div id={footer_email}>
+          <img id={email_icon} src='/images/email.svg'/>
+          <div id={email_address}>aflatness@gmail.com</div>
         </div>
       </Link>
-      <div id={styles.footer_Copyright}>
-        <span> &#169; 2021</span> Alec Flatness
+      <div id={footer_Copyright}>
+        <span> &#169; 2022</span> Alec Flatness
       </div>
     </footer>
   </div>

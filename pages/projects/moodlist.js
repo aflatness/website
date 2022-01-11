@@ -5,11 +5,11 @@ import Layout from '../../components/layout';
 import utilStyles from '../../components/utils.module.css';
 import layoutStyles from '../../components/layout.module.css';
 
-export default function FirstPost() {
+export default function MoodList() {
   return (
     <Layout>
       <Head>
-        <title>Mood List</title>
+        <title>Alec Flatness — Mood List</title>
       </Head>
       <h1 className={utilStyles.appTitle}>
         <a href='https://moodlist-heroku.herokuapp.com' target='_blank' >
@@ -17,17 +17,20 @@ export default function FirstPost() {
         </a>
       </h1>
       <div className={utilStyles.appCont}>
-        <ul className={utilStyles.headingMd}>
-          <li>MoodList creates a curated Spotify playlist based a Spotify users current mood and their top 50 listened to tracks.</li>
-          <li>Offers ability to save the curated playlist to the user's profile, as well as a viewable history of use, to access previously created playlists.
-          </li>
-          <li>Stores the users session for easy log in, valid throughout the access token authorization.
-          </li>
+        <div className={utilStyles.headingMd}>
+          <ul>
+            <li>MoodList creates a curated Spotify playlist based a Spotify users current mood and their top 50 listened to tracks.</li>
+            <li>
+              Offers ability to save the curated playlist to the user's profile, as well as a viewable history of use, to access previously created playlists.
+            </li>
+            <li>Stores the users session for easy log in, valid throughout the access token authorization.</li>
+
+          </ul>
+          <h3><u>Technologies used:</u></h3>
           <div>
-            <h3><u>Technologies used:</u></h3>
             React, React-Bootstrap, Spotify API, Express, Node.js, MongoDB Cloud Atlas, Mongoose, Heroku
           </div>
-        </ul>
+        </div>
         <div className={utilStyles.gif}>
           <Image
               priority
