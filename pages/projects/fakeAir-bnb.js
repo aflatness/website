@@ -9,7 +9,7 @@ export default function FakeAirBnb() {
   return (
     <Layout>
       <Head>
-        <title>Alec Flatness — FakeAir-bnb</title>
+        <title>Alec Flatness - FakeAir-bnb</title>
       </Head>
       <h1 className={utilStyles.appTitle}>
         <a href='https://fakeAir-bnb.herokuapp.com' target='_blank' >

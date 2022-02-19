@@ -9,7 +9,7 @@ export default function KevinKeith() {
   return (
     <Layout>
       <Head>
-        <title>Alec Flatness — Kevin Keith</title>
+        <title>Alec Flatness - Kevin Keith</title>
       </Head>
       <h1 className={utilStyles.appTitle}>
         <a href='https://kevinkeithmusician.com' target='_blank' >

@@ -9,7 +9,7 @@ export default function MoodList() {
   return (
     <Layout>
       <Head>
-        <title>Alec Flatness — Mood List</title>
+        <title>Alec Flatness - Mood List</title>
       </Head>
       <h1 className={utilStyles.appTitle}>
         <a href='https://moodlist-heroku.herokuapp.com' target='_blank' >
